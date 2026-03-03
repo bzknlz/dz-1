@@ -14,5 +14,5 @@ func inputExchangeInfo() string {
 	return exchangeInfo
 }
 
-// func convertCurrency(amount float64, fromCurrency string, toCurrency string) float64 {
-// }
+func convertCurrency(amount float64, fromCurrency string, toCurrency string) float64 {
+}
