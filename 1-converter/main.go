@@ -3,8 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	const USDToEUR float64 = 0.85
-	const USDToRUB float64 = 80.0
-	EURToRUB := USDToRUB / USDToEUR
-	fmt.Println(EURToRUB)
+	exchangeInfo := inputExchangeInfo()
+	fmt.Print(exchangeInfo)
 }
+
+func inputExchangeInfo() string {
+	fmt.Println("Введите информацию о валютном обмене:")
+	var exchangeInfo string
+	fmt.Scan(&exchangeInfo)
+	return exchangeInfo
+}
+
+// func convertCurrency(amount float64, fromCurrency string, toCurrency string) float64 {
+// }
